@@ -9,18 +9,20 @@
 </head>
 <body>
     <header>
-        <section>
-            <div class="Encabezado">
-                <nav>
-                    <a href=" https://mail.google.com/mail/?authuser=0&ogbl"> Gmail </a>
-                    <a href="https://www.google.com.co/imghp?hl=es&authuser=0&ogbl">Imágenes</a>
+        <section id="Encabezado">
+            <nav class="Encabezado_a_la_derecha">
+                <div Class="TextoEncabezado">
+                    <a href=" https://mail.google.com/mail/?authuser=0&ogbl">  Gmail  </a>
+                    <a href="https://www.google.com.co/imghp?hl=es&authuser=0&ogbl"> Imágenes </a>
+                </div>
+                <div class="ImagenesEncabezado">
                     <p><a href="https://www.google.com.co/intl/es/about/products">
-                    <img src="/imagenes/PortafolioG.JPG" alt="Portafolio Google" width="40" height="40" style="vertical-align:bottom">
-                    </a>
+                        <img src="/imagenes/PortafolioG.JPG" alt="Portafolio Google" width="40" height="40" style="vertical-align:bottom">
+                        </a>
                     </p>
-                    <img src="/imagenes/PerfilG.JPG" alt="Perfil Google" width="40" height="40">
-                </nav>                
-            </div>     
+                    <img src="/imagenes/PerfilG.JPG" alt="Perfil Google" width="50" height="40">
+                </div>                 
+            </nav>                      
         </section>
     </header>
     <main>
@@ -31,21 +33,58 @@
                 </a>
             </p>
             <div class="Centro_busqueda">
-                <form action="search" autocomplete="off" method="get" role="search">
-                    <div class="Texto">
-                        <textarea class="Textobusqueda" title="Buscar" type="search" value="" style=""></textarea>
-                    </div>
-                    <div class="Lupa">
-                        <img src="/imagenes/Lupa.JPG" alt="Lupa" width="30" height="30">
-                    </div>
-                    
-                </form>
                 
-
+                <form action="/Búsquedas/scripdel formulario">
+                    <div class="Buscador" id="Buscador">
+                        <div class="Lupa">
+                            <img src="/imagenes/Lupa.JPG" alt="Lupa" width="40" height="40">
+                        </div>
+                        <textarea name="message" rows="0" cols="50"></textarea>
+                        <br>
+                        <div class="Microfono">
+                            <img src="/imagenes/Microfono.JPG" alt="Microfono" width="40" height="40">
+                        </div>
+                        <div class="Camara">
+                            <img src="/imagenes/Camara.JPG" alt="Camara" width="40" height="40">
+                        </div>
+                    </div>
+                </form>
+                <section class="Comandos_Buscar">
+                    <div>
+                        <div><button type="Buscar con Google">Buscar con Google</button></div>
+                        <div><button type="Voy a tener suerte"> Voy a tener suerte</button></div>
+                    </div>
+                </section>
             </div>
-           
-        </div>
+        </div>   
     </main>
-    
+
+    <footer>
+        <ul class="footer-left">
+            <li> 
+                <a href="https://about.google/?utm_source=google-CO&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/intl/es_co/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"> Publicidad</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a>
+            </li>
+            <li> 
+            <a href=" https://google.com/search/howsearchworks "> Cómo funciona la búsqueda </a>
+            </li> 
+        </ul>
+        <ul  clase="footer-rigth">
+            <li>
+                <a href="https://policies.google.com/privacy?hl=es-CO&fg=1">Privacidad </a>
+            </li>
+            <li>
+                <a href="https://policies.google.com/terms?hl=es-CO&fg=1">Condiciones </a>
+            </li>
+            <li>
+                <a href="">Preferencias</a>
+            </li>
+      </ul>
+    </footer>
 </body>
 </html>
