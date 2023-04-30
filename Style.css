@@ -7,34 +7,63 @@
 body {
     margin:0;
     padding: 0;
-
-}
-#Encabezado {
     display: grid;
-    grid-template-columns:20%;
-    justify-content: space-between;
-
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    grid-template-areas: "header"; 
+}
+header {
+    display: grid; 
+    grid-area: 1 / 4 / 2 / 6;
+    grid-auto-rows: 1fr; 
+    gap: 2px 1px; 
+    grid-template-areas: "Encabezado";
+}
+.Encabezado{
+    display: grid; 
+    grid-area: 1 / 4 / 2 / 6; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . ."
+        "Encabezado_a_la_derecha"
+        ". . ."; 
+    justify-self: start; 
+    align-self: center; 
+    float: right;
 }
 .Encabezado_a_la_derecha {
+    display: grid; 
+    grid-area: 1 / 4 / 2 / 6; 
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . ."
+        "Texto . ."
+        ". . ."; 
+    justify-self: start; 
+    align-self: center; 
     float: right;
-    display:block;
-    grid-column-start: 3;
+    /*display:block;
+    grid-column-start: 2;
     display: inline;
     position: absolute;
-    top: 0px;
-    margin-top: 50px;
+    padding: 15px 10px 20px 10px;
+    margin-top: 20px;
     right: 0px;
     margin-right: 6px;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 5fr;*/
 }
 
 .TextoEncabezado {
     display: inline;
-    grid-row: 2;
+    grid-row: 1;
 }
 .ImagenesEncabezado {
     display: inline;
-    grid-row: 2;
+    grid-row: 1.5;
 }
 
 .Centro {
